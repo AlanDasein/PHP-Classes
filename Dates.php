@@ -36,7 +36,7 @@ class Dates
 			$values[1]++;
 		}
 		
-		if($_leading_zeros) {return leading_zeros($values[0].$_spacer.$values[1].$_spacer.$values[2], $_spacer);}
+		if($_leading_zeros) {return $this -> leading_zeros($values[0].$_spacer.$values[1].$_spacer.$values[2], $_spacer);}
 		else {return $values[0].$_spacer.$values[1].$_spacer.$values[2];}
 		
 	}
@@ -69,7 +69,7 @@ class Dates
 			$values[2] += $days[$values[1]];
 		}
 		
-		if($_leading_zeros) {return leading_zeros($values[0].$_spacer.$values[1].$_spacer.$values[2], $_spacer);}
+		if($_leading_zeros) {return $this -> leading_zeros($values[0].$_spacer.$values[1].$_spacer.$values[2], $_spacer);}
 		else {return $values[0].$_spacer.$values[1].$_spacer.$values[2];}
 	}
 	
