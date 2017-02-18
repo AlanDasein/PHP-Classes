@@ -80,7 +80,7 @@
 			}
 			catch(PDOException $e) {
 				
-				$db->rollback();
+				if(!empty($db)) $db->rollback();
 				
 				die($e->getMessage());
 				
